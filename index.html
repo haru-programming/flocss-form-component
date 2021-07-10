@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>フォームのコンポーネント</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <input
+      class="c-form-input"
+      type="text"
+      placeholder="名前を入力してください"
+      name="name"
+      title="name"
+      id="name"
+      value=""
+    />
+    <!-- /.c-form-input -->
+
+    <textarea
+      class="c-form-textarea"
+      name="inquiry"
+      id="inquiry"
+      placeholder="お問い合わせ内容を入力してください"
+    ></textarea>
+    <!-- /.c-form-textarea -->
+
+    <span class="c-form-select is-placeholder">
+      <select name="title" id="title">
+        <option value="" selected="">お問い合わせの種類をお選びください</option>
+        <option value="ご意見・ご要望">ご意見・ご要望</option>
+        <option value="お仕事のご依頼">お仕事のご依頼</option>
+        <option value="商品に関するお問い合わせ"
+          >商品に関するお問い合わせ</option
+        >
+        <option value="その他">その他</option>
+      </select>
+    </span>
+    <!-- /.c-form-select -->
+
+    <label class="c-form-radio">
+      <input type="radio" name="reply" title="reply" value="E-mail" /><span
+        class="c-form-radio__text"
+        >E-mail</span
+      >
+    </label>
+    <!-- /.c-form-radio :E-mail -->
+
+    <label class="c-form-radio">
+      <input type="radio" name="reply" title="reply" value="電話" /><span
+        class="c-form-radio__text"
+        >電話</span
+      >
+    </label>
+    <!-- /.c-form-radio :電話 -->
+
+    <label class="c-form-check">
+      <input
+        type="checkbox"
+        name="answer"
+        title="answer"
+        value="同意する"
+      /><span class="c-form-check__text">同意する</span>
+    </label>
+    <!-- /.c-form-check -->
+  </body>
+</html>
